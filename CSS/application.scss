@@ -7,33 +7,45 @@ html, body {
   margin: 0;
   overflow: hidden;
   background: #ddd;
-  color: #333; }
+  color: #333;
+}
 
-h1 {
+h1{
   padding: 0 0 0 55px;
-  float: left; }
+  float: left;
+}
 
-h2 {
-  padding: 0 0 0 15px; }
+h2{
+  padding: 0 0 0 15px;
+}
 
 a:hover {
-  font-weight: bold; }
-
+    font-weight: bold;
+}
 #menu {
   float: left;
   width: 15vw;
   min-width: 100px;
   height: 100%;
   margin: 0;
-  background: #333;
-  color: #ddd; }
 
+  background: #333;
+  color: #ddd;
+}
+
+.menuTitle {
+
+}
 .menuItem {
   width: 100%;
-  padding: 10px 0 0 40px; }
+  padding: 10px 0 0 40px;
+}
+
+
 
 #content {
-  float: left; }
+  float: left;
+}
 
 .maintenance {
   display: inline-block;
@@ -43,16 +55,20 @@ a:hover {
   right: 10vw;
   width: 80%;
   height: 80%;
+
   border-radius: 40px;
+
   background-size: 25%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: url(../img/screwdriver3.svg);
-  background-color: rgba(220, 180, 0, 0.75); }
+  background-color: rgba(220, 180, 0, 0.75);
+}
 
 .maintenanceTitle {
   position: absolute;
   bottom: 10vh;
   width: 100%;
   font-size: 60px;
-  text-align: center; }
+  text-align: center;
+}
