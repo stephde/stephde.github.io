@@ -9,11 +9,12 @@
         <script type="text/javascript" src="JS/jquery-2.1.1.js"></script>
 
         <link rel="stylesheet" type="text/css" href="CSS/application.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     </head>
     <body>
 
-    <!--- only for maintenace   -->
+    <!--- only for maintenace  
 
     <div class="maintenance">
         <div class="maintenanceTitle">UNDER CONSTRUCTION</div>
@@ -23,30 +24,46 @@
 
     <div id="menu">
         <h2 class="menuTitle">Menu</h2>
-        <div class="menuItem"><a>Home</a></div>
-        <div class="menuItem"><a>Projects</a></div>
-        <div class="menuItem"><a>About</a></div>
+        <div class="menuItem">
+            <a href="#start">
+            <i class="fa fa-home"></i>Home
+            </a>
+        </div>
+        <div class="menuItem">
+            <a href="#projects">
+                <i class="fa fa-code-fork"></i>Projects
+            </a>
+        </div>
+        <div class="menuItem">
+            <a href="#about">
+                <i class="fa fa-suitcase"></i>About
+            </a>
+        </div>
     </div>
 
     <div id="content">
 
         <section id="sectionHome">
             <div class="titleWrapper">
-                <h1><a name="home">Welcome!</a></h1>
+                <h1><a name="start">Welcome!</a></h1>
             </div>
+
+            <p>
+                Welcome to my GitHub Page! Here you can checkout different projects I contributed to. They are listed in the section below. If you click on them you will be forwarded to the project's web page and can learn more about it or even get involved yourself. 
+            </p>
         </section>
 
         <section id="sectionProjects">
             <div class="titleWrapper">
-                <h1><a name="mission">My Projects</a></h1>
+                <h1><a name="projects">My Projects</a></h1>
             </div>
 
             <ul class="projects">
                 <li>
-            	   <a href="/MatchUp">
+            	   <a href="/MatchUP">
                         <img src="img/matchupsnip.png">
                         <p>
-                            MatchUP is a mobile web app which seeks to help you with finding new people who you can do your favorite sports with. So far we only implemented a rudimental protoype, but there might be coming more soon. Click to learn more...
+                            MatchUP is a mobile web app which seeks to help you with finding new people who you can do your favorite sports with. So far we only implemented a rudimental protoype, but there will be more coming more soon. Click to learn more...
                         </p>
                     </a>
                 </li>
@@ -57,9 +74,18 @@
                             StayStrap is a platform for people who are going abroad. There you can find useful information like living cost or distance to important landmarks for specific places. Right now we only feature a handful of cities, but we are working on extending our catalogue. Click here to get involved or learn more...
                         </p>
                     </a>
-                </li>       
-            </div>
+                </li>     
         </section>
+
+        <section id="sectionAbout">
+            <div class="titleWrapper">
+                <h1><a name="about">About</a></h1>
+            </div>
+
+            <p>
+                I am a software engineer form Germany. Check out my LinkedIn Profile <a href="https://www.linkedin.com/in/stephan-detje-22918ab2"><i class="fa fa-linkedin-square"></i></a>.
+            </p>
+        </section>  
 
     </div>
 
