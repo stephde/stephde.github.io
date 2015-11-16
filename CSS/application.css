@@ -117,7 +117,41 @@ section {
   padding-bottom: 5rem;
   background: linear-gradient(#dddddd, #eaeaea);
 }
+.projects {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.projects li {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 2rem;
+  background-color: darkslategray;
+  border-radius: 2rem;
+  transition: background-color 1s;
+}
+.projects li:hover {
+  background-color: #426f6f;
+}
+.projects li a {
+  padding: 5rem;
+  min-height: 5rem;
+}
+.projects li a img {
+  height: 80%%;
+  width: 50%;
+}
+.projects li a p {
+  width: 40%;
+  float: right;
+  line-height: 155%;
+  color: aliceblue;
+}
 .maintenance {
+  z-index: 1000;
   display: inline-block;
   position: absolute;
   top: 10vh;

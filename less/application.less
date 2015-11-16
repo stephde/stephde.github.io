@@ -52,7 +52,7 @@ h2 {
 }
 
 
-a{
+a {
   .normalizeLinks;
   &:hover {
     font-weight: bold; 
@@ -111,12 +111,52 @@ section {
   background: 
     linear-gradient(
       @contentBackground,
-      lighten(@contentBackground, 5%)),
+      lighten(@contentBackground, 5%));
+}
+
+.projects {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  li {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 2rem;
+    background-color: darkslategray;
+    border-radius: 2rem;
+    transition: background-color 1s;
+
+    &:hover { 
+      background-color: lighten(darkslategray, 10%);
+    }
+
+    a {
+      padding: 5rem;
+      min-height: 5rem;
+
+      img {
+        height: 80%%;
+        width: 50%;
+      }
+
+      p {
+        width: 40%;
+        float: right;
+        line-height: 155%;
+        color: aliceblue;
+      }
+    }
+  }
 }
 
 // maintenance code
 
 .maintenance {
+  z-index: 1000;
   display: inline-block;
   position: absolute;
   top: 10vh;
