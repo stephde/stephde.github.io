@@ -1,4 +1,21 @@
-html, body {
+.normalizeLinks:link {
+  color: #333333;
+  text-decoration: none;
+}
+.normalizeLinks:hover {
+  color: #333333;
+  text-decoration: none;
+}
+.normalizeLinks:visited {
+  color: #333333;
+  text-decoration: none;
+}
+.normalizeLinks:active {
+  color: #333333;
+  text-decoration: none;
+}
+html,
+body {
   position: relative;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   height: 100%;
@@ -6,35 +23,100 @@ html, body {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  background: #ddd;
-  color: #333; }
-
+  background: #dddddd;
+  color: #333333;
+}
+.titleWrapper {
+  width: 100%;
+  display: flex;
+}
 h1 {
   padding: 0 0 0 55px;
-  float: left; }
-
+  float: left;
+}
 h2 {
-  padding: 0 0 0 15px; }
-
+  padding: 0 0 0 15px;
+}
+a:link {
+  color: #333333;
+  text-decoration: none;
+}
 a:hover {
-  font-weight: bold; }
-
+  color: #333333;
+  text-decoration: none;
+}
+a:visited {
+  color: #333333;
+  text-decoration: none;
+}
+a:active {
+  color: #333333;
+  text-decoration: none;
+}
+a:hover {
+  font-weight: bold;
+}
 #menu {
   float: left;
   width: 15vw;
   min-width: 100px;
   height: 100%;
   margin: 0;
-  background: #333;
-  color: #ddd; }
-
+  background: #333333;
+  color: #dddddd;
+}
 .menuItem {
+  display: flex;
+}
+.menuItem a {
   width: 100%;
-  padding: 10px 0 0 40px; }
-
+  padding: 1.5rem 0 1.5rem 2rem;
+  transition: background-color 1s;
+}
+.menuItem a:link {
+  color: #333333;
+  text-decoration: none;
+}
+.menuItem a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+.menuItem a:visited {
+  color: #333333;
+  text-decoration: none;
+}
+.menuItem a:active {
+  color: #333333;
+  text-decoration: none;
+}
+.menuItem a:hover {
+  font-weight: bold;
+  background-color: #4d4d4d;
+}
+.menuItem a i {
+  padding: 1rem;
+  font-size: 150%;
+}
 #content {
-  float: left; }
-
+  float: left;
+  width: 85vw;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 140%;
+}
+section {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  min-height: 25rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(#dddddd, #eaeaea);
+}
 .maintenance {
   display: inline-block;
   position: absolute;
@@ -48,11 +130,12 @@ a:hover {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: url(../img/screwdriver3.svg);
-  background-color: rgba(220, 180, 0, 0.75); }
-
+  background-color: rgba(220, 180, 0, 0.75);
+}
 .maintenanceTitle {
   position: absolute;
   bottom: 10vh;
   width: 100%;
   font-size: 60px;
-  text-align: center; }
+  text-align: center;
+}

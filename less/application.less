@@ -1,0 +1,141 @@
+
+@contentBackground: #ddd;
+@menuBackground: #333;
+
+@contentColor: @menuBackground;
+@menuColor: @contentBackground;
+
+//normalize links
+.normalizeLinks {
+  &:link {
+    color: @contentColor;
+    text-decoration: none;
+  }
+  &:hover {
+    color: @contentColor;
+    text-decoration: none;
+  }
+  &:visited {
+    color: @contentColor;
+    text-decoration: none;
+  }
+  &:active {
+    color: @contentColor;
+    text-decoration: none;
+  }
+}
+
+html, body {
+  position: relative;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: @contentBackground;
+  color: @contentColor; 
+}
+
+.titleWrapper {
+  width: 100%;
+  display: flex;
+}
+
+h1 {
+  padding: 0 0 0 55px;
+  float: left; 
+}
+
+h2 {
+  padding: 0 0 0 15px; 
+}
+
+
+a{
+  .normalizeLinks;
+  &:hover {
+    font-weight: bold; 
+  }
+}
+
+#menu {
+  float: left;
+  width: 15vw;
+  min-width: 100px;
+  height: 100%;
+  margin: 0;
+  background: @menuBackground;
+  color: @menuColor; 
+}
+
+.menuItem {
+  display: flex;
+  a {
+    .normalizeLinks;
+    width: 100%;
+    padding: 1.5rem 0 1.5rem 2rem;
+    transition: background-color 1s;
+
+    &:hover {
+      font-weight: bold;
+      background-color: lighten(@menuBackground, 10%);
+    }
+
+    i {
+      padding: 1rem;
+      font-size: 150%;
+    }
+  }
+}
+
+#content {
+  float: left; 
+  width: 85vw;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 140%;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  min-height: 25rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: 
+    linear-gradient(
+      @contentBackground,
+      lighten(@contentBackground, 5%)),
+}
+
+// maintenance code
+
+.maintenance {
+  display: inline-block;
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  right: 10vw;
+  width: 80%;
+  height: 80%;
+  border-radius: 40px;
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(../img/screwdriver3.svg);
+  background-color: rgba(220, 180, 0, 0.75); 
+}
+
+.maintenanceTitle {
+  position: absolute;
+  bottom: 10vh;
+  width: 100%;
+  font-size: 60px;
+  text-align: center; 
+}
