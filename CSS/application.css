@@ -104,6 +104,7 @@ section {
 section > p {
   padding: 5rem;
   line-height: 200%;
+  width: 100%;
 }
 .projects {
   list-style: none;
@@ -139,6 +140,27 @@ section > p {
   float: right;
   line-height: 155%;
   color: aliceblue;
+}
+.profiles {
+  list-style-type: none;
+  display: flex;
+  margin: auto;
+}
+.profiles li {
+  margin: auto 2rem auto 2rem;
+}
+.profiles li a {
+  display: flex;
+}
+.profiles li a i {
+  transition: color 1.5s;
+  color: #8c8c8c;
+}
+.profiles li a i:before {
+  font-size: 400%;
+}
+.profiles li a i:hover {
+  color: #333333;
 }
 @media all and (max-width: 1350px) {
   #menu {

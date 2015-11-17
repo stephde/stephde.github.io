@@ -116,6 +116,7 @@ section {
   > p {
     padding: 5rem;
     line-height: 200%;
+    width: 100%;
   }
 }
 
@@ -157,6 +158,33 @@ section {
         color: aliceblue;
       }
     }
+  }
+}
+
+.profiles {
+  list-style-type: none;
+  display: flex;
+  margin: auto;
+
+  li {
+    margin: auto 2rem auto 2rem;
+
+    a {
+      display: flex;
+
+      i {
+        transition: color 1.5s;
+        color: lighten(@contentColor, 35%);
+ 
+        &:before {
+          font-size: 400%;
+        }
+
+        &:hover {
+          color: @contentColor;
+        }
+      }
+    }    
   }
 }
 
