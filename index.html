@@ -6,8 +6,6 @@
         <meta name="author" content="Stephan Detje">
         <title>Projects</title>
 
-        <script type="text/javascript" src="JS/jquery-2.1.1.js"></script>
-
         <link rel="stylesheet" type="text/css" href="CSS/application.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -25,17 +23,17 @@
     <div id="menu">
         <h2 class="menuTitle">Menu</h2>
         <div class="menuItem">
-            <a href="#start">
-            <i class="fa fa-home"></i>Home
+            <a onclick="goToByScroll('start')">
+                <i class="fa fa-home"></i>Home
             </a>
         </div>
         <div class="menuItem">
-            <a href="#projects">
+            <a onclick="goToByScroll('projects')">
                 <i class="fa fa-code-fork"></i>Projects
             </a>
         </div>
         <div class="menuItem">
-            <a href="#about">
+            <a onclick="goToByScroll('about')">
                 <i class="fa fa-suitcase"></i>About
             </a>
         </div>
@@ -45,7 +43,7 @@
 
         <section id="sectionHome">
             <div class="titleWrapper">
-                <h1><a name="start">Welcome!</a></h1>
+                <h1><a id="start" name="start">Welcome!</a></h1>
             </div>
 
             <p>
@@ -55,7 +53,7 @@
 
         <section id="sectionProjects">
             <div class="titleWrapper">
-                <h1><a name="projects">My Projects</a></h1>
+                <h1><a id="projects" name="projects">My Projects</a></h1>
             </div>
 
             <ul class="projects">
@@ -87,7 +85,7 @@
 
         <section id="sectionAbout">
             <div class="titleWrapper">
-                <h1><a name="about">About</a></h1>
+                <h1><a id="about" name="about">About</a></h1>
             </div>
 
             <p>
@@ -106,6 +104,7 @@
 
     </div>
 
+    <script type="text/javascript" src="JS/jquery-2.1.1.js"></script>
     <script type="text/javascript" src="JS/main.js"></script>
 
     </body>
