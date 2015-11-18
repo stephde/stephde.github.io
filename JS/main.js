@@ -3,3 +3,10 @@ function goToByScroll(id){
 
     return false
 }
+
+function changePage() {
+	var elems = $('.activePage, .inactivePage')
+		
+	elems.toggleClass('activePage')
+	elems.toggleClass('inactivePage')
+}

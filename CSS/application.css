@@ -130,7 +130,7 @@ section > p {
   justify-content: center;
   flex-wrap: wrap;
 }
-.projects li {
+.projects > li {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -140,23 +140,73 @@ section > p {
   border-bottom-right-radius: 2rem;
   transition: background-color 1s;
 }
-.projects li:hover {
+.projects > li:hover {
   background-color: #426f6f;
 }
-.projects li a {
+.projects > li a {
   padding: 5rem;
   min-height: 5rem;
 }
-.projects li a img {
+.projects > li a img {
   height: 80%%;
   width: 50%;
   box-shadow: 2rem 1rem 2rem #1B1B1B;
 }
-.projects li a p {
+.projects > li a p {
   width: 40%;
   float: right;
   line-height: 155%;
   color: aliceblue;
+}
+.multiPageProject ul {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  padding: 5rem;
+  min-height: 5rem;
+}
+.multiPageProject ul a {
+  padding: 0;
+}
+.multiPageProject ul li {
+  width: 100%;
+  min-height: 5rem;
+}
+.multiPageProject ul li img,
+.multiPageProject ul li iframe {
+  float: left;
+  min-height: 22.5rem;
+  width: 50%;
+  box-shadow: 2rem 1rem 2rem #1B1B1B;
+  transition: box-shadow 1s;
+}
+.multiPageProject ul li img:hover,
+.multiPageProject ul li iframe:hover {
+  box-shadow: 3rem 1.5rem 2rem #1B1B1B;
+}
+.multiPageProject ul li p {
+  width: 40%;
+  height: 100%;
+  float: left;
+  line-height: 155%;
+  color: aliceblue;
+  margin-left: 5rem;
+}
+.multiPageProject ul li .nextPage {
+  width: 2%;
+  height: 100%;
+  float: right;
+  font-size: 500%;
+  margin-top: 5rem;
+  margin-right: -1rem;
+  transition: color 1s;
+}
+.multiPageProject ul li .nextPage:hover {
+  color: aliceblue;
+  cursor: pointer;
+}
+.inactivePage {
+  display: none;
 }
 .profiles {
   list-style-type: none;

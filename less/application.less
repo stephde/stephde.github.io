@@ -147,7 +147,7 @@ section {
   justify-content: center;
   flex-wrap: wrap;
 
-  li {
+  > li {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -181,6 +181,63 @@ section {
   }
 }
 
+.multiPageProject ul {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  padding: 5rem;
+  min-height: 5rem;
+
+  a {
+    padding: 0;
+  }
+
+  li {
+    width: 100%;
+    min-height: 5rem;
+
+    img, iframe {
+      float: left;
+      min-height: 22.5rem;
+      width: 50%;
+      box-shadow: 2rem 1rem 2rem #1B1B1B;
+      transition: box-shadow 1s;
+
+      &:hover {
+        box-shadow: 3rem 1.5rem 2rem #1B1B1B;
+      }
+    }
+
+    p {
+      width: 40%;
+      height: 100%;
+      float: left;
+      line-height: 155%;
+      color: aliceblue;
+      margin-left: 5rem;
+    }
+
+    .nextPage {
+      width: 2%;
+      height: 100%;
+      float: right;
+      font-size: 500%;
+      margin-top: 5rem;
+      margin-right: -1rem;
+      transition: color 1s;
+
+      &:hover {
+        color: aliceblue;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.inactivePage {
+  display: none;
+}
+
 .profiles {
   list-style-type: none;
   display: flex;
@@ -204,7 +261,7 @@ section {
           color: @contentColor;
         }
       }
-    }    
+    }
   }
 }
 
