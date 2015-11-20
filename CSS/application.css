@@ -208,6 +208,17 @@ section > p {
 .inactivePage {
   display: none;
 }
+[tooltip]:before {
+  position: absolute;
+  bottom: 2rem;
+  content: attr(tooltip);
+  opacity: 0;
+  color: #333333;
+  transition: opacity 1s;
+}
+[tooltip]:hover:before {
+  opacity: 1;
+}
 .profiles {
   list-style-type: none;
   display: flex;
@@ -244,6 +255,12 @@ section > p {
   .projects li a p {
     float: none;
     width: 100%;
+  }
+}
+@media all and (min-width: 1400px) {
+  section {
+    max-width: 1600px;
+    margin: auto;
   }
 }
 .maintenance {

@@ -238,6 +238,20 @@ section {
   display: none;
 }
 
+[tooltip]:before {            
+  position : absolute;
+  bottom: 2rem;
+  content : attr(tooltip);
+  opacity : 0;
+  color: @contentColor;
+
+  transition: opacity 1s;
+}
+
+[tooltip]:hover:before {        
+  opacity : 1;
+}
+
 .profiles {
   list-style-type: none;
   display: flex;
@@ -245,6 +259,7 @@ section {
 
   li {
     margin: auto 2rem auto 2rem;
+
 
     a {
       display: flex;
@@ -290,6 +305,15 @@ section {
       float: none;
       width: 100%;
     }
+  }
+}
+
+// styles for big devices
+
+@media all and (min-width: 1400px) {
+  section {
+    max-width: 1600px;
+    margin: auto;
   }
 }
 
