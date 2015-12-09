@@ -7,8 +7,8 @@ body {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  background: #dddddd;
-  color: #333333;
+  background: #ddd;
+  color: #333;
 }
 .titleWrapper {
   width: 100%;
@@ -30,23 +30,20 @@ h2 {
   padding: 0 0 0 15px;
 }
 a:link {
-  color: #333333;
+  color: #333;
   text-decoration: none;
 }
 a:hover {
-  color: #333333;
+  color: #333;
   text-decoration: none;
 }
 a:visited {
-  color: #333333;
+  color: #333;
   text-decoration: none;
 }
 a:active {
-  color: #333333;
+  color: #333;
   text-decoration: none;
-}
-a:hover {
-  font-weight: bold;
 }
 #menu {
   float: left;
@@ -54,8 +51,8 @@ a:hover {
   min-width: 100px;
   height: 100%;
   margin: 0;
-  background: #333333;
-  color: #dddddd;
+  background: #333;
+  color: #ddd;
 }
 .menuItem {
   display: flex;
@@ -67,19 +64,19 @@ a:hover {
   transition: background-color 1s;
 }
 .menuItem a:link {
-  color: #ffffff;
+  color: #FFF;
   text-decoration: none;
 }
 .menuItem a:hover {
-  color: #ffffff;
+  color: #FFF;
   text-decoration: none;
 }
 .menuItem a:visited {
-  color: #ffffff;
+  color: #FFF;
   text-decoration: none;
 }
 .menuItem a:active {
-  color: #ffffff;
+  color: #FFF;
   text-decoration: none;
 }
 .menuItem a:hover {
@@ -116,7 +113,7 @@ section {
   min-height: 25rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background: linear-gradient(to bottom right, #dddddd, #eaeaea);
+  background: linear-gradient(to bottom right, #ddd, #eaeaea);
 }
 section > p {
   padding: 5rem;
@@ -213,7 +210,7 @@ section > p {
   bottom: 2rem;
   content: attr(tooltip);
   opacity: 0;
-  color: #333333;
+  color: #333;
   transition: opacity 1s;
 }
 [tooltip]:hover:before {
@@ -238,7 +235,7 @@ section > p {
   font-size: 400%;
 }
 .profiles li a i:hover {
-  color: #333333;
+  color: #333;
 }
 @media all and (max-width: 1350px) {
   #menu {
