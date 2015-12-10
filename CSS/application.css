@@ -213,6 +213,9 @@ section > p {
   color: #333;
   transition: opacity 1s;
 }
+.longTextTooltip[tooltip]:before {
+  margin-left: -0.7rem;
+}
 [tooltip]:hover:before {
   opacity: 1;
 }
@@ -237,6 +240,10 @@ section > p {
 .profiles li a i:hover {
   color: #333;
 }
+#twitter-widget-0 {
+  margin-top: 5rem;
+  max-height: 15rem;
+}
 @media all and (max-width: 1350px) {
   #menu {
     display: none;
@@ -252,6 +259,18 @@ section > p {
   .projects li a p {
     float: none;
     width: 100%;
+  }
+  .multiPageProject ul li p {
+    width: 80%;
+  }
+  .multiPageProject ul li iframe {
+    width: 100%;
+  }
+  .profiles {
+    flex-wrap: wrap;
+  }
+  [tooltip]:before {
+    content: none;
   }
 }
 @media all and (min-width: 1400px) {
