@@ -4,11 +4,9 @@
         <meta charset="UTF-8">
         <meta name="description" content="Project page of software engineer Stephan Detje">
         <meta name="author" content="Stephan Detje">
-        <title>Projects</title>
-
+        <title>Stephde.com</title>
+        <link rel="shortcut icon" href="img/favicon.ico">
         <link rel="stylesheet" type="text/css" href="CSS/application.css" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
     </head>
     <body>
 
@@ -169,6 +167,23 @@
 
     <script type="text/javascript" src="JS/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="JS/main.js"></script>
+
+    <script type="text/javascript">
+        function loadStyleSheet(src){
+            if (document.createStyleSheet) {
+                document.createStyleSheet(src)
+            }
+            else {
+                var stylesheet = document.createElement('link')
+                stylesheet.href = src
+                stylesheet.rel = 'stylesheet'
+                stylesheet.type = 'text/css'
+                document.getElementsByTagName('head')[0].appendChild(stylesheet)
+            }
+        }
+
+        loadStyleSheet("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+    </script>
 
     </body>
 </html>
