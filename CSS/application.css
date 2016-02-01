@@ -7,8 +7,8 @@ body {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  background: #ddd;
-  color: #333;
+  background: #d7e4ef;
+  color: #1b3246;
 }
 .titleWrapper {
   width: 100%;
@@ -30,19 +30,19 @@ h2 {
   padding: 0 0 0 15px;
 }
 a:link {
-  color: #333;
+  color: #1b3246;
   text-decoration: none;
 }
 a:hover {
-  color: #333;
+  color: #1b3246;
   text-decoration: none;
 }
 a:visited {
-  color: #333;
+  color: #1b3246;
   text-decoration: none;
 }
 a:active {
-  color: #333;
+  color: #1b3246;
   text-decoration: none;
 }
 #menu {
@@ -51,8 +51,8 @@ a:active {
   min-width: 100px;
   height: 100%;
   margin: 0;
-  background: #333;
-  color: #ddd;
+  background: #1b3246;
+  color: #d7e4ef;
 }
 .menuItem {
   display: flex;
@@ -81,7 +81,8 @@ a:active {
 }
 .menuItem a:hover {
   font-weight: bold;
-  background-color: #595959;
+  background-color: #294d6b;
+  color: #fbfdfe;
 }
 .menuItem a:after {
   content: "";
@@ -89,7 +90,7 @@ a:active {
   width: auto;
   display: flex;
   margin: 1rem 1rem auto -1rem;
-  background-color: dimgray;
+  background-color: #d7e4ef;
 }
 .menuItem a i {
   padding: 1rem;
@@ -102,7 +103,9 @@ a:active {
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
-  font-size: 140%;
+  font-size: 120%;
+  background-image: url("../img/background2.jpg");
+  background-size: cover;
 }
 section {
   position: relative;
@@ -113,12 +116,50 @@ section {
   min-height: 25rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background: linear-gradient(to bottom right, #ddd, #eaeaea);
+  background: linear-gradient(to bottom right, #d7e4ef, #e9f0f6);
 }
 section > p {
   padding: 5rem;
   line-height: 200%;
   width: 100%;
+}
+#sectionQuote {
+  background: linear-gradient(rgba(150, 210, 250, 0.5), rgba(150, 210, 250, 0.5));
+  color: #1b3246;
+}
+#sectionQuote p {
+  font-size: 180%;
+  font-style: italic;
+  font-variant: small-caps;
+  font-stretch: expanded;
+  font-family: Lucidatypewriter, monospace;
+}
+#sectionQuote p:before {
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+#sectionQuote .quoteAuthor {
+  font-size: 50%;
+  display: block;
+}
+#sectionSocial,
+#sectionTwitter {
+  background: linear-gradient(rgba(150, 210, 250, 0.5), rgba(150, 210, 250, 0.5));
+}
+#sectionHome {
+  background: linear-gradient(rgba(150, 210, 250, 0.5), rgba(150, 210, 250, 0.5));
+}
+#sectionProjects {
+  background-color: linear-gradient(rgba(215, 228, 239, 0.05), rgba(215, 228, 239, 0.1));
+}
+.seperator1 {
+  width: 100%;
+  height: 10rem;
+  background-image: linear-gradient(to top, #d7e4ef, #d7e4ef, rgba(150, 210, 250, 0.5));
+  background-size: cover;
 }
 .projects {
   list-style: none;
@@ -126,81 +167,60 @@ section > p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 0;
 }
 .projects > li {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: center;
-  margin: 2rem;
-  background-color: darkslategray;
-  border-top-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  transition: background-color 1s;
 }
-.projects > li:hover {
-  background-color: #426f6f;
-}
-.projects > li a {
-  padding: 5rem;
+.projects > li .projectWrapper {
+  padding: 5rem 12rem 5rem 12rem;
   min-height: 5rem;
 }
-.projects > li a img {
-  height: 80%%;
-  width: 50%;
-  box-shadow: 2rem 1rem 2rem #1B1B1B;
-}
-.projects > li a p {
-  width: 40%;
-  float: right;
-  line-height: 155%;
-  color: aliceblue;
-}
-.multiPageProject ul {
-  list-style-type: none;
-  display: flex;
-  width: 100%;
-  padding: 5rem;
-  min-height: 5rem;
-}
-.multiPageProject ul a {
+.projects > li .projectWrapper h2 {
+  margin: 0 auto 2rem 5rem;
   padding: 0;
 }
-.multiPageProject ul li {
+.projects > li .projectWrapper h2:after {
+  content: " ";
+  display: block;
+  margin: 1rem 0 1rem -2rem;
   width: 100%;
-  min-height: 5rem;
+  height: 1px;
+  background-color: #b2cce1;
 }
-.multiPageProject ul li img,
-.multiPageProject ul li iframe {
-  float: left;
-  min-height: 22.5rem;
-  width: 50%;
-  box-shadow: 2rem 1rem 2rem #1B1B1B;
-  transition: box-shadow 1s;
-}
-.multiPageProject ul li img:hover,
-.multiPageProject ul li iframe:hover {
-  box-shadow: 3rem 1.5rem 2rem #1B1B1B;
-}
-.multiPageProject ul li p {
-  width: 40%;
-  height: 100%;
-  float: left;
+.projects > li .projectWrapper p {
+  display: flex;
   line-height: 155%;
-  color: aliceblue;
-  margin-left: 5rem;
 }
-.multiPageProject ul li .nextPage {
-  width: 2%;
-  height: 100%;
+.projects > li .projectWrapper p > img,
+.projects > li .projectWrapper p > iframe,
+.projects > li .projectWrapper p > .imageWrapper {
+  height: 80%;
+  width: 50%;
   float: right;
-  font-size: 500%;
-  margin-top: 5rem;
-  margin-right: -1rem;
-  transition: color 1s;
+  margin-left: 3rem;
+  box-shadow: 2rem 1rem 2rem #1B1B1B;
 }
-.multiPageProject ul li .nextPage:hover {
-  color: aliceblue;
-  cursor: pointer;
+.projects > li .projectWrapper p > .imageWrapper {
+  height: 15rem;
+}
+.projects > li .projectWrapper p > .imageWrapper img {
+  height: 15rem;
+  width: 25vw;
+}
+.projects > li .projectWrapper p a {
+  font-weight: bold;
+}
+.projects > li .projectWrapper p.videoWrapper {
+  margin-top: 3rem;
+  display: block;
+}
+.projects > li .projectWrapper p.videoWrapper iframe {
+  width: 25vw;
+  height: 20rem;
 }
 .inactivePage {
   display: none;
@@ -210,7 +230,7 @@ section > p {
   bottom: 2rem;
   content: attr(tooltip);
   opacity: 0;
-  color: #333;
+  color: #1b3246;
   transition: opacity 1s;
 }
 .longTextTooltip[tooltip]:before {
@@ -232,13 +252,13 @@ section > p {
 }
 .profiles li a i {
   transition: color 1.5s;
-  color: #8c8c8c;
+  color: #568ebd;
 }
 .profiles li a i:before {
   font-size: 400%;
 }
 .profiles li a i:hover {
-  color: #333;
+  color: #1b3246;
 }
 #twitter-widget-0 {
   margin-top: 5rem;
