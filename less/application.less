@@ -5,6 +5,8 @@
 @contentColor: @menuBackground;
 @menuColor: @contentBackground;
 
+@menuWidth: 15vw;
+
 //normalize links
 .normalizeLinks (@textcolor){
   &:link {
@@ -70,7 +72,7 @@ a {
 
 #menu {
   float: left;
-  width: 15vw;
+  width: @menuWidth;
   min-width: 100px;
   height: 100%;
   margin: 0;
@@ -105,6 +107,32 @@ a {
     i {
       padding: 1rem;
       font-size: 150%;
+    }
+  }
+}
+
+.menuFooter {
+  position: absolute;
+  bottom: 0;
+  width: @menuWidth;
+  .transparentBackground(0.1);
+  background-clip: padding-box;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  ul {
+    list-style-type: none;
+
+    &:first-child {
+      font-style: italic;
+    }
+
+    a {
+      color: @menuColor;
+
+      &:hover {
+        font-weight: bold;
+      }
     }
   }
 }
@@ -330,8 +358,9 @@ section {
 }
 
 #twitter-widget-0 {
-  margin-top: 5rem;
-  max-height: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 25rem;
 }
 
 

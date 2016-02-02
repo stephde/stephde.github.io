@@ -96,6 +96,27 @@ a:active {
   padding: 1rem;
   font-size: 150%;
 }
+.menuFooter {
+  position: absolute;
+  bottom: 0;
+  width: 15vw;
+  background: linear-gradient(rgba(150, 210, 250, 0.1), rgba(150, 210, 250, 0.1));
+  background-clip: padding-box;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.menuFooter ul {
+  list-style-type: none;
+}
+.menuFooter ul:first-child {
+  font-style: italic;
+}
+.menuFooter ul a {
+  color: #d7e4ef;
+}
+.menuFooter ul a:hover {
+  font-weight: bold;
+}
 #content {
   float: left;
   width: 85vw;
@@ -262,8 +283,9 @@ section > p {
   color: #1b3246;
 }
 #twitter-widget-0 {
-  margin-top: 5rem;
-  max-height: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 25rem;
 }
 @media all and (max-width: 1350px) {
   #menu {
