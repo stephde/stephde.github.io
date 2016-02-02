@@ -119,7 +119,7 @@ section {
   background: linear-gradient(to bottom right, #d7e4ef, #e9f0f6);
 }
 section > p {
-  padding: 5rem;
+  padding: 5rem 12rem 5rem 12rem;
   line-height: 200%;
   width: 100%;
 }
@@ -243,6 +243,7 @@ section > p {
   list-style-type: none;
   display: flex;
   margin: auto;
+  padding: 0;
 }
 .profiles li {
   margin: auto 2rem auto 2rem;
@@ -273,18 +274,23 @@ section > p {
   }
 }
 @media all and (max-width: 1000px) {
-  .projects li a img {
+  #sectionHome p {
+    padding: 5rem;
+  }
+  .projects li > .projectWrapper {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .projects li > .projectWrapper img {
     width: 90%;
   }
-  .projects li a p {
+  .projects li > .projectWrapper p {
     float: none;
     width: 100%;
   }
-  .multiPageProject ul li p {
-    width: 80%;
-  }
-  .multiPageProject ul li iframe {
-    width: 100%;
+  .projects li > .projectWrapper p.videoWrapper > iframe,
+  .projects li > .projectWrapper p .imageWrapper > img {
+    width: 35vw;
   }
   .profiles {
     flex-wrap: wrap;
@@ -295,7 +301,7 @@ section > p {
 }
 @media all and (min-width: 1400px) {
   section {
-    max-width: 1600px;
+    max-width: 1450px;
     margin: auto;
   }
 }
