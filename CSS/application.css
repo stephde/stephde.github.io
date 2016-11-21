@@ -143,6 +143,7 @@ section > p {
   padding: 5rem 12rem 5rem 12rem;
   line-height: 200%;
   width: 100%;
+  text-align: justify;
 }
 #sectionQuote {
   background: linear-gradient(rgba(150, 210, 250, 0.5), rgba(150, 210, 250, 0.5));
@@ -215,6 +216,7 @@ section > p {
 .projects > li .projectWrapper p {
   display: flex;
   line-height: 155%;
+  text-align: justify;
 }
 .projects > li .projectWrapper p > img,
 .projects > li .projectWrapper p > iframe,
