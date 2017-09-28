@@ -140,7 +140,7 @@ button:focus { outline: none; }
 }
 
 .gray-bg { background-color: #F4F4F4; }
-.dark-gray-bg { background-color: #DDD; }
+.footer-bg { background-color: #DDD; }
 .dark-gray-text { color: #666666; }
 .blue-text { color: #006699; }
 .light-blue-text { color: #4EA7FF; }
