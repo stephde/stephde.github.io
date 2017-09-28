@@ -1,0 +1,65 @@
+/**
+    overrides
+**/
+.tm-intro {
+    background: url(../img/background2-min.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: left top;
+    background-size: 100% 750px;
+}
+
+
+/**
+    styles
+**/
+
+
+[tooltip]:before {
+    position: absolute;
+    bottom: -2rem;
+    left: 1rem;
+    content: attr(tooltip);
+    opacity: 0;
+    color: #1b3246;
+    transition: opacity 1s;
+}
+.longTextTooltip[tooltip]:before {
+    margin-left: -0.3rem;
+}
+[tooltip]:hover:before {
+    opacity: 1;
+}
+.profiles {
+    display: flex;
+    margin: auto;
+    padding: 0;
+}
+.profiles div {
+    margin: auto 2rem auto 2rem;
+}
+.profiles div a {
+    display: flex;
+}
+.profiles div a i {
+    transition: color 1.5s;
+    color: #568ebd;
+}
+.profiles div a i:before {
+    font-size: 400%;
+}
+.profiles div a i:hover {
+    color: #1b3246;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
