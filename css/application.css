@@ -24,7 +24,6 @@
 [tooltip]:before {
     position: absolute;
     bottom: -2rem;
-    left: 1rem;
     content: attr(tooltip);
     opacity: 0;
     color: #1b3246;
@@ -38,14 +37,20 @@
 }
 .profiles {
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     padding: 0;
 }
 .profiles div {
-    margin: auto 2rem auto 2rem;
+    margin: auto auto 2rem auto;
+}
+@media (max-width: 900px) {
+    .profiles div {
+        margin: auto 8vw 2rem 8vw
+    }
 }
 .profiles div a {
-    display: flex;
+    display: inline-block;
 }
 .profiles div a i {
     transition: color 1.5s;
@@ -56,6 +61,10 @@
 }
 .profiles div a i:hover {
     color: #1b3246;
+}
+
+.footer-bg .tm-section {
+    padding-bottom: 2rem;
 }
 
 /* centered columns styles */
