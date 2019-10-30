@@ -20,7 +20,27 @@
     display: none;
 }
 
+.tm-container {
+    max-width: 80vw;
+}
 
+.tm-news-container {
+    background: transparent;
+}
+
+.tm-news-item-img-container img {
+    max-width: 400px;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: grey 5px 5px 15px;
+}
+
+.tm-news-item {
+    border-left: 2px solid gray;
+    padding-left: 1em;
+    padding-top: 1em;
+    margin-bottom: 5em;
+}
 /**
     styles
 **/
@@ -130,4 +150,22 @@
     text-align:left;
     /* inline-block space fix */
     margin-right:-4px;
+}
+
+
+
+
+/**** New Styles for Redesign ****/
+
+.section-title {
+
+}
+
+.project-links {
+    font-size: small;
+}
+
+.project-logos img {
+    width: 6em;
+    height: 3em;
 }
