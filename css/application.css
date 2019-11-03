@@ -29,10 +29,12 @@
 }
 
 .tm-news-item-img-container img {
-    max-width: 400px;
-    height: 400px;
+    max-width: 500px;
+    height: 350px;
     object-fit: cover;
     box-shadow: grey 5px 5px 15px;
+    /*position: absolute;*/
+    /*bottom: 0;*/
 }
 
 .tm-news-item {
