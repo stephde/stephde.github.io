@@ -88,7 +88,7 @@ http://www.templatemo.com/tm-483-lumino
             <div class="row gray-bg">
                 
                 <div id="tm-section-2" class="tm-section transparent-bg">
-                    <div class="tm-container tm-container-wide">
+                    <div id="projects-container" class="tm-container tm-container-wide">
 
                         <h2 class="section-title tm-title ">My Projects</h2>
 
@@ -202,7 +202,7 @@ http://www.templatemo.com/tm-483-lumino
 
                         <!-- -------------- NEXT BIG THING IN FITNESS TECH ----------- -->
 
-                        <div class="tm-news-item">
+                        <div class="tm-news-item hidden-project">
                             
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-item-img-container">
                                 <img src="img/fit-guy.jpg" alt="Image" class="img-fluid tm-news-item-img">
@@ -226,7 +226,7 @@ http://www.templatemo.com/tm-483-lumino
 
                         <!-- ------------ NOISE TO OPPORTUNITY ------------- -->
 
-                        <div class="tm-news-item">
+                        <div class="tm-news-item hidden-project">
 
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 flex-order-2 tm-news-item-img-container">
                                 <img src="img/n2o-min.png" alt="Image" class="img-fluid tm-news-item-img">
@@ -256,7 +256,7 @@ http://www.templatemo.com/tm-483-lumino
 
                         <!-- ------------ STAYSTRAP ------------- -->
 
-                        <div class="tm-news-item">
+                        <div class="tm-news-item hidden-project">
 
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-item-img-container">
                                 <img src="img/staystrap-compressed.jpg" alt="Image" class="img-fluid tm-news-item-img">
@@ -278,9 +278,9 @@ http://www.templatemo.com/tm-483-lumino
                             </div>
                         </div>
 
-                        <!-- ------------ MATCH - UP -------------
+                        <!-- ------------ MATCH - UP ------------- --->
 
-                        <div class="tm-news-item">
+                        <div class="tm-news-item hidden-project">
 
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 flex-order-2 tm-news-item-img-container">
                                 <img src="img/matchupsnip-compressed.jpg" alt="Image" class="img-fluid tm-news-item-img">
@@ -299,7 +299,7 @@ http://www.templatemo.com/tm-483-lumino
 
                         <!-- ------------ BLOGINTELLIGENCE ------------- -->
 
-                        <div class="tm-news-item">
+                        <div class="tm-news-item hidden-project">
 
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-item-img-container flex-order-2">
                                 <img src="img/blogintelligence-compressed.jpg" alt="Image" class="img-fluid tm-news-item-img">
@@ -323,6 +323,12 @@ http://www.templatemo.com/tm-483-lumino
                </div>
 
            </div> <!-- row -->
+
+            <div class="row transparent-bg">
+                <div class="tm-container text-xs-center between-section-element">
+                    <span id="show-more-projects" class="section-button tm-title">Show More Projects</span>
+                </div>
+            </div>
 
             <!-- --------------- GALLERY ---------------- --
             <div class="row">
@@ -558,7 +564,24 @@ http://www.templatemo.com/tm-483-lumino
                     delegate: 'a', // child items selector, by clicking on it popup will open
                     type: 'image',
                     gallery: {enabled:true}            
-                });            
+                });
+
+
+                /* Toggle more projects
+                ------------------------- */
+                var projectsAreCollapsed = true;
+                $('#show-more-projects').click(function() {
+                    // toggle hide or show on projects, starting by the 4th children (off by 1 due to headline)
+                    $('#projects-container > div.tm-news-item:nth-child(1n+5)').toggleClass('hidden-project')
+
+                    // adjust text on show more button
+                    $('#show-more-projects').text(projectsAreCollapsed
+                        ? 'Show Less Projects'
+                        : 'Show More Projects');
+
+                    projectsAreCollapsed = !projectsAreCollapsed;
+                })
+
             });
 
         </script>             

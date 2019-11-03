@@ -169,3 +169,22 @@
     width: 6em;
     height: 3em;
 }
+
+.hidden-project {
+    display: none;
+}
+
+.section-button {
+    font-size: larger;
+    cursor: pointer;
+    color: #007ab4;
+    transition: color 0.5s;
+}
+.section-button:hover {
+    transition: color 0.5s;
+    color: #005b91;
+}
+
+.between-section-element {
+    padding-bottom: 2em;
+}
