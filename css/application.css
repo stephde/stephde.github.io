@@ -105,6 +105,24 @@
         background-size: 40em;
         min-height: 250px;
     }
+
+    .tm-news-item {
+        font-size: smaller;
+        padding-right: 0;
+    }
+
+    #rtb .excerpt {
+        padding: 1em;
+    }
+
+    div.project-logos > img {
+        width: 3.75em;
+        height: 2em;
+    }
+
+    .footer-bg .profiles {
+        max-width: 250px;
+    }
 }
 
 .portrait {
