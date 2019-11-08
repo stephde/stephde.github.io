@@ -554,7 +554,7 @@ http://www.templatemo.com/tm-483-lumino
         <script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script> <!-- Medium Plugin -->
         
         <!-- Templatemo scripts -->
-        <script>     
+        <script>
        
             $(document).ready(function(){
 
@@ -663,7 +663,23 @@ http://www.templatemo.com/tm-483-lumino
                         : 'Show More Projects');
 
                     projectsAreCollapsed = !projectsAreCollapsed;
-                })
+                });
+
+
+                /* Fix links on blog posts
+                ------------------------- */
+
+                // this is hacky, never try this at home!
+                setTimeout(addOnClickToPosts, 5000);
+                function addOnClickToPosts() {
+                    console.log("addOnClickToPosts called");
+                    $.each($('#rtb div.row > div'), function(index, post) {
+                        var url = $(post).find('a').first().attr('href');
+                        $(post).click(function() {
+                            window.open(url, '_blank');
+                        });
+                    });
+                }
 
             });
 
