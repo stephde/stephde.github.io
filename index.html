@@ -226,7 +226,7 @@ http://www.templatemo.com/tm-483-lumino
 
                         <!-- -------------- NEXT BIG THING IN FITNESS TECH ----------- -->
 
-                        <div class="tm-news-item hidden-project">
+                        <div class="tm-news-item partially-visible">
                             
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 flex-order-2 tm-news-item-img-container">
                                 <img src="img/fit-guy.jpg" alt="Image" class="img-fluid tm-news-item-img">
@@ -261,7 +261,7 @@ http://www.templatemo.com/tm-483-lumino
                                 <img src="img/n2o-min.png" alt="Image" class="img-fluid tm-news-item-img">
                             </div>
 
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-container flex-order-1">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-container">
                                 <h2 class="tm-news-title project-headline">Noise To Opportunity</h2>
                                 <p class="tm-news-text">
                                     Noise To Opportunity (N2O) is a platform directed at professionals who want to
@@ -357,7 +357,7 @@ http://www.templatemo.com/tm-483-lumino
                                 <img src="img/blogintelligence-compressed.jpg" alt="Image" class="img-fluid tm-news-item-img">
                             </div>
 
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-container flex-order-1">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-container">
                                 <h2 class="tm-news-title project-headline">BlogIntelligence</h2>
                                 <p class="tm-news-text">
                                     BlogIntelligence is research project targeted towards clustering and extracting data
@@ -654,8 +654,10 @@ http://www.templatemo.com/tm-483-lumino
                 ------------------------- */
                 var projectsAreCollapsed = true;
                 $('#show-more-projects').click(function() {
+                    $('#projects-container > div.tm-news-item:nth-child(5)').toggleClass('partially-visible');
+
                     // toggle hide or show on projects, starting by the 4th children (off by 1 due to headline)
-                    $('#projects-container > div.tm-news-item:nth-child(1n+5)').toggleClass('hidden-project')
+                    $('#projects-container > div.tm-news-item:nth-child(1n+6)').toggleClass('hidden-project');
 
                     // adjust text on show more button
                     $('#show-more-projects').text(projectsAreCollapsed

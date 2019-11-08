@@ -106,9 +106,39 @@
         min-height: 250px;
     }
 
+    .portrait {
+        margin-top: 3.25em !important;
+    }
+
+    .sitename {
+        margin-left: -3.2em;
+        margin-bottom: 0.5em;
+    }
+
+    .intro-text-title {
+        font-size: xx-small !important;
+    }
+
+    .tm-intro-text {
+        max-width: 10em;
+    }
+
+    #tm-section-2 {
+        padding-top: 4em;
+    }
+
     .tm-news-item {
         font-size: smaller;
+        margin-top: 1em;
         padding-right: 0;
+    }
+    
+    .tm-news-item.partially-visible .tm-news-item-img-container {
+        display: none;
+    }
+
+    .tm-title {
+        margin-bottom: .5em;
     }
 
     #rtb .excerpt {
@@ -295,4 +325,8 @@
 
 .between-section-element {
     padding-bottom: 2em;
+}
+
+.partially-visible {
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
 }
